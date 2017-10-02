@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica4.Calculadora"
+             Padding="15"
+             Title="Calculadora"  >
+   
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition  Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <Label Grid.Column="0" Grid.Row="1" FontSize="Medium" FontAttributes="Bold" Grid.ColumnSpan="4" x:Name="caja" VerticalTextAlignment="End" HorizontalTextAlignment="End"/>
+        <Label Grid.Column="0" Grid.Row="0"  FontSize="Medium" FontAttributes="Bold" Grid.ColumnSpan="4" x:Name="caja2" VerticalTextAlignment="End" HorizontalTextAlignment="End"/>
+
+        <!--<Button Grid.Column="0" Grid.Row="2" TextColor="Black" BackgroundColor="Gray"  FontSize="Medium" FontAttributes="Bold" Text="CE" x:Name="borrar_digito" Clicked="borrar_digito_Clicked"/>-->
+        <Button Grid.Column="0" Grid.Row="2" TextColor="Black" BackgroundColor="Gray"  FontSize="Medium" FontAttributes="Bold" Text="C" x:Name="borrar_todo" Clicked="borrar_todo_Clicked"/>
+        <Button  Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="2" TextColor="Black" BackgroundColor="Gray"  FontSize="Medium" FontAttributes="Bold" Text="←" x:Name="borrar" Clicked="borrar_Clicked"/>
+        <Button Grid.Column="3" Grid.Row="2" TextColor="Black" BackgroundColor="Gray"  FontSize="Medium" FontAttributes="Bold" Text="÷" x:Name="division" Clicked="division_Clicked"/>
+        <Button Grid.Column="0" Grid.Row="3" TextColor="White" BackgroundColor="Black" FontSize="Medium" FontAttributes="Bold" Text="7" x:Name="siete" Clicked="siete_Clicked"/>
+        <Button Grid.Column="1" Grid.Row="3" TextColor="White" BackgroundColor="Black" FontSize="Medium" FontAttributes="Bold" Text="8" x:Name="ocho" Clicked="ocho_Clicked"/>
+        <Button Grid.Column="2" Grid.Row="3" TextColor="White" BackgroundColor="Black" FontSize="Medium" FontAttributes="Bold" Text="9" x:Name="nueve" Clicked="nueve_Clicked"/>
+        <Button Grid.Column="3" Grid.Row="3" TextColor="Black" BackgroundColor="Gray"  FontSize="Medium" FontAttributes="Bold" Text="X" x:Name="por" Clicked="por_Clicked"/>
+        <Button Grid.Column="0" Grid.Row="4" TextColor="White" BackgroundColor="Black" FontSize="Medium" FontAttributes="Bold" Text="4" x:Name="cuatro" Clicked="cuatro_Clicked"/>
+        <Button Grid.Column="1" Grid.Row="4" TextColor="White" BackgroundColor="Black" FontSize="Medium" FontAttributes="Bold" Text="5" x:Name="cinco" Clicked="cinco_Clicked"/>
+        <Button Grid.Column="2" Grid.Row="4" TextColor="White" BackgroundColor="Black" FontSize="Medium" FontAttributes="Bold" Text="6" x:Name="seis" Clicked="seis_Clicked"/>
+        <Button Grid.Column="3" Grid.Row="4" TextColor="Black" BackgroundColor="Gray"  FontSize="Medium"  FontAttributes="Bold" Text="-" x:Name="resta" Clicked="resta_Clicked"/>
+        <Button Grid.Column="0" Grid.Row="5" TextColor="White" BackgroundColor="Black" FontSize="Medium" FontAttributes="Bold" Text="1" x:Name="uno" Clicked="uno_Clicked"/>
+        <Button Grid.Column="1" Grid.Row="5" TextColor="White" BackgroundColor="Black" FontSize="Medium" FontAttributes="Bold" Text="2" x:Name="dos" Clicked="dos_Clicked"/>
+        <Button Grid.Column="2" Grid.Row="5" TextColor="White" BackgroundColor="Black" FontSize="Medium" FontAttributes="Bold" Text="3" x:Name="tres" Clicked="tres_Clicked"/>
+        <Button Grid.Column="3" Grid.Row="5" TextColor="Black" BackgroundColor="Gray"  FontSize="Medium" FontAttributes="Bold" Text="+" x:Name="suma" Clicked="suma_Clicked"/>
+        <Button Grid.Column="0" Grid.Row="6" TextColor="White" BackgroundColor="Black" FontSize="Medium" FontAttributes="Bold" Text="+/-" x:Name="absoluto" Clicked="absoluto_Clicked"/>
+        <Button Grid.Column="1" Grid.Row="6" TextColor="White" BackgroundColor="Black" FontSize="Medium" FontAttributes="Bold" Text="0" x:Name="cero" Clicked="cero_Clicked"/>
+        <Button Grid.Column="2" Grid.Row="6" TextColor="White" BackgroundColor="Black" FontSize="Medium" FontAttributes="Bold" Text="." x:Name="punto" Clicked="punto_Clicked"/>
+        <Button Grid.Column="3" Grid.Row="6" TextColor="Black" BackgroundColor="Gray"  FontSize="Medium" FontAttributes="Bold" Text="=" x:Name="igual" Clicked="igual_Clicked"/>
+        <Button Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="3" TextColor="White" BackgroundColor="Gray"  FontSize="Medium" FontAttributes="Bold" Text="Inicio" x:Name="Back" Clicked="Back_Clicked"/>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica4.Registro"
+             BackgroundColor="Aqua"
+             Title="Registro"
+             Padding="15">
+    
+   
+    <ScrollView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+             <ColumnDefinition Width="*"></ColumnDefinition>
+             <ColumnDefinition Width="Auto"></ColumnDefinition>
+             </Grid.ColumnDefinitions>
+             <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" ></RowDefinition>
+            <RowDefinition Height="Auto" ></RowDefinition> <!--0-->
+            <RowDefinition Height="Auto" ></RowDefinition> <!--1-->
+            <RowDefinition Height="Auto" ></RowDefinition> <!--2-->
+            <RowDefinition Height="Auto" ></RowDefinition> <!--3-->
+            <RowDefinition Height="Auto" ></RowDefinition> <!--4-->
+            <RowDefinition Height="Auto" ></RowDefinition> <!--5-->
+            <RowDefinition Height="Auto" ></RowDefinition> <!--6-->
+            <RowDefinition Height="Auto" ></RowDefinition> <!--7-->
+            <RowDefinition Height="Auto" ></RowDefinition> <!--8-->
+            <RowDefinition Height="Auto" ></RowDefinition> <!--9-->
+            <RowDefinition Height="Auto" ></RowDefinition>  <!--10-->
+            <RowDefinition Height="Auto" ></RowDefinition> <!--11-->
+            <RowDefinition Height="Auto" ></RowDefinition> <!--Button-->
+            </Grid.RowDefinitions>
+            <Label Text="Datos Personales" Grid.Row="0"  Grid.Column="0" Grid.ColumnSpan="2" FontSize="Medium" TextColor="Black" ></Label>
+            <Entry x:Name="N" Placeholder="Nombre" Grid.Row="1" BackgroundColor="White" PlaceholderColor="Black"  Grid.Column="0" Grid.ColumnSpan="2" TextColor="DarkBlue"></Entry>
+            <Entry x:Name="AP" Placeholder= "Apellidos" Grid.Row="2" BackgroundColor="White" PlaceholderColor="Black"  Grid.Column="0" Grid.ColumnSpan="2"  TextColor="DarkBlue"></Entry>
+            <Entry x:Name="D" Placeholder="Direccion" Grid.Row="3" BackgroundColor="White" PlaceholderColor="Black"  Grid.Column="0" Grid.ColumnSpan="2" TextColor="DarkBlue"></Entry>
+            <Entry x:Name="T" Placeholder="Telefono" Keyboard="Numeric" Grid.Row="4" BackgroundColor="White" PlaceholderColor="Black"  Grid.Column="0" Grid.ColumnSpan="2" TextColor="DarkBlue"></Entry>
+            <Label Text="Datos Escolares" Grid.Row="5"  Grid.Column="0" Grid.ColumnSpan="2" FontSize="Medium" TextColor="Black" ></Label>
+            <Entry x:Name="C" Placeholder="Carrera" Grid.Row="6"  BackgroundColor="White" PlaceholderColor="Black"  Grid.Column="0" Grid.ColumnSpan="2" TextColor="DarkBlue"></Entry>
+            <Entry x:Name="S" Placeholder="Semestre" Grid.Row="7"  BackgroundColor="White" PlaceholderColor="Black"  Grid.Column="0" Grid.ColumnSpan="2" TextColor="DarkBlue"></Entry>
+            <Entry x:Name="M" Placeholder="Matricula" Keyboard="Numeric" Grid.Row="8" BackgroundColor="White" PlaceholderColor="Black"  Grid.Column="0" Grid.ColumnSpan="2" TextColor="DarkBlue"></Entry>
+            <Label Text="Datos Sociales" Grid.Row="9"  Grid.Column="0" Grid.ColumnSpan="2" FontSize="Medium" TextColor="Black" ></Label>
+            <Entry x:Name="CE" Placeholder="Email" Grid.Row="10"  BackgroundColor="White" PlaceholderColor="Black"  Grid.Column="0" Grid.ColumnSpan="2" Keyboard="Email" TextColor="DarkBlue"></Entry>
+            <Entry x:Name="GH" Placeholder="GitHub" Grid.Row="11" BackgroundColor="White" PlaceholderColor="Black"  Grid.Column="0" Grid.ColumnSpan="2" TextColor="DarkBlue"></Entry>
+            <Button Grid.Column="0" Grid.Row="12"  Text="Ok" TextColor="White" Clicked="MostrarOnClicked"></Button>
+            <Button Grid.Column="1" Grid.Row="12"  Text="SIGUIENTE" TextColor="White" Clicked="Button_Clicked"></Button>
+
+        </Grid>
+    </ScrollView>
+</ContentPage>
